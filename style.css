@@ -1,0 +1,114 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #020613;
+    --fonte-principal: 'New Amsterdam';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body {
+  color: var(--branco-principal);
+  background: var(--cor-de-fundo);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+header {
+    border-bottom: solid 2px var(--cinza-secundario);
+    padding: 10px;
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    margin: -1.75em 0 0 1.4em;
+
+}
+
+.logo1 {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 5% 5%;
+    border-bottom: solid 2px var(--cinza-secundario);
+    padding: 1px;
+}
+
+.principal {
+    margin: -1em 0 0 0;
+    background-image: url(img/backgroud.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--cor-de-fundo);
+    font-size: 20px;
+    margin: 0em 0em 2em 0;
+    
+}
+
+.insta_central {
+    height: 9vh;
+    margin: 24em 10em 0em 0em;
+}
+
+.youtube_central {
+    height: 8vh;
+    margin: 24em 38em 0em 0em;
+}
+
+.img2 {
+    height: 200px;
+    animation-delay: calc(30s / 3 * (3 - 1) * -1);
+}
+
+.img3 {
+    height: 120px;
+    margin-top: 50px;
+    animation-delay: calc(30s / 3 * (3 - 2) * -1);
+    
+    
+}
+
+.img4 {
+    height: 200px;
+    animation-delay: calc(30s / 3 * (3 - 3) * -1);
+    
+}
+
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+} 
+
+.img {
+    gap: 10px;
+    position: absolute;
+    border-radius: 6px;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.opcoes {
+   width: 90%;
+   max-width: 1536px;
+   margin-inline: auto;
+   position: relative;
+   height: 200px;
+   margin-top: 5rem;
+   overflow: hidden;
+   mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+   );
+
+}
